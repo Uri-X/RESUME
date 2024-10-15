@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philbert Kuria - Operations Associate Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .contact {
+            text-align: center;
+        }
+        .contact a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .skills, .interests, .languages {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle Button -->
+<button id="darkModeToggle" onclick="toggleDarkMode()">Dark Mode</button>
+
+    <div class="container">
+        <h1>Philbert Kuria</h1>
+        <div class="contact"> 
+            <span>+250793220454</span> | 
+            <span><a href="mailto:philbertkuria@gmail.com">philbertkuria@gmail.com</a></span> | 
+            <span><a href="https://www.linkedin.com/in/philbert-kuria/">LinkedIn Profile</a></span>
+        </div>
+        
+
+        <div class="section">
+            <h2>Summary</h2>
+            <p>Experienced Operations Associate with a strong background in financial management, event coordination, and process improvement. Skilled in overseeing budgets, managing recruitment, and optimizing internal operations to enhance productivity. Proven ability to handle diverse tasks such as compliance, procurement, and communications within a mission-driven environment. Adept at navigating financial processes, coordinating high-level events, and working with international stakeholders. Highly organized and adaptable, with a passion for AI safety and global collaboration. Looking to contribute to a dynamic team focused on minimizing extreme AI risks through effective operations management.</p>
+        </div>
+
+        <div class="section">
+            <h2>Educational Background</h2>
+            <ul>
+                <li>Bachelor of Honors degree in Software Engineering (current) – African Leadership University</li>
+                <li>Certificate in Google Data Analytics – Coursera</li>
+                <li>Certificate in Google Business Intelligence – Coursera</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Professional Work Experience</h2>
+            <h3>Marketing Associate (2024) – SkyTrade (DePin), New York (Remote)</h3>
+            <ul>
+                <li>Developing articles and blogs for the company's blog.</li>
+                <li>Co-creating articles with external publishers.</li>
+                <li>Developing the company’s newsletter and talking points.</li>
+            </ul>
+
+            <h3>Operations Associate (2021) – Wowzi, Nairobi, Kenya (Hybrid)</h3>
+            <ul>
+                <li>Developed campaign briefs for companies.</li>
+                <li>Conducted influencers’ quality management.</li>
+                <li>On-boarded customers into the Wowzi platform, driving sales by over 30%.</li>
+                <li>Organized and coordinated events with a capacity of over 900 people.</li>
+            </ul>
+
+            <h3>Digital and Public Relations Manager (2020) – Upfield, Nairobi, Kenya (Hybrid)</h3>
+            <ul>
+                <li>Managed the company’s influencers and content creators.</li>
+                <li>Monitored and tracked PR coverage.</li>
+                <li>Developed content for the company’s newsletter.</li>
+                <li>Represented the company at industry events, conferences, and product launch invites.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Portfolio & Industry Knowledge</h2>
+            <p>Best Innovation Award - E-labs: African Leadership University</p>
+            <p>A business intelligence software that helps farmers combat climate change and increase yields at their farms in East Africa.</p>
+            <p><a href="https://sites.google.com/view/philbertkuria?usp=sharing">View my Business Intelligence and product management portfolio here</a></p>
+        </div>
+
+        <div class="section">
+            <h2 onclick="toggleSection('skills')">Skills & Knowledge</h2>
+            <ul class="skills" id="skills">
+                <li>Communications</li>
+                <li>Community Engagement</li>
+                <li>Entrepreneurial Leadership</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2 onclick="toggleSection('interests')">Interests</h2>
+            <ul class="interests" id="interests">
+                <li>Climate Change</li>
+                <li>Technological Innovation</li>
+                <li>Fintech</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2 onclick="toggleSection('languages')">Languages</h2>
+            <ul class="languages" id="languages">
+                <li>Kiswahili – Native</li>
+                <li>English – Expert</li>
+                <li>French – Basic</li>
+            </ul>
+        </div>
+        
+        <!-- Scroll to Top Button -->
+        <button id="scrollToTop" onclick="scrollToTop()">Top</button>
+        
+
+    </div>
+    <script>
+        // Toggle Dark Mode
+        function toggleDarkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+    
+            // Change button text based on mode
+            var btn = document.getElementById("darkModeToggle");
+            if (element.classList.contains("dark-mode")) {
+                btn.innerHTML = "Light Mode";
+            } else {
+                btn.innerHTML = "Dark Mode";
+            }
+        }
+    </script>
+</body>
+</html>

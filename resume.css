@@ -1,0 +1,185 @@
+/* General body and container styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto; /* Add margin for allowance */
+    background-color: white;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #2980b9; /* Thin border */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+/* Headings styling - Highlighted */
+h1, h2, h3 {
+    text-align: center;
+    color: #2c3e50;
+    padding: 10px;
+    background-color: #d0eaff; /* Uniform light blue highlight */
+    border-left: 5px solid #2980b9; /* Uniform darker blue highlight on the left */
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Additional styles for h1 */
+h1 {
+    font-size: 2.5em;
+    border-left: 8px solid #2980b9; /* Thicker border for h1 */
+}
+
+/* Contact information styling */
+.contact {
+    text-align: center;
+    margin: 15px 0; /* Adjust margin for spacing */
+}
+
+.contact span {
+    margin: 0 10px; /* Spacing between items */
+}
+
+.contact a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Flexbox for skills, interests, and languages */
+ul {
+    list-style-type: disc; /* Use disc bullets */
+    padding-left: 20px; /* Add padding for the list */
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+.skills, .interests, .languages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills li, .interests li, .languages li {
+    margin: 5px 0; /* Spacing between items */
+    width: 30%; /* Set each list item to take 30% of the width */
+}
+
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%; /* Wider container for small screens */
+        margin-top: 15px;
+    }
+
+    /* Stack skills, interests, and languages in a column for smaller screens */
+    .skills, .interests, .languages {
+        flex-direction: column; /* Change to column layout on small screens */
+        justify-content: flex-start;
+    }
+
+    .skills li, .interests li, .languages li {
+        width: 100%; /* Take full width for each item */
+    }
+
+    .contact span {
+        display: block; /* Stack contact details in a column */
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 2em; /* Reduce h1 font size on smaller screens */
+    }
+    
+    h2, h3 {
+        font-size: 1.5em; /* Reduce h2 and h3 font size */
+    }
+}
+/* Scroll to Top Button */
+#scrollToTop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#scrollToTop:hover {
+    background-color: #555;
+}
+
+/* Add transition and display for toggling sections */
+ul.skills, ul.interests, ul.languages {
+    display: block;
+    transition: max-height 0.3s ease-out;
+}
+/* General Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+/* Dark Mode for container */
+.dark-mode .container {
+    background-color: #1f1f1f;
+    border-color: #555;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Dark Mode for headings */
+.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+    background-color: #333;
+    border-left-color: #777; /* Darker border in dark mode */
+    color: #f4f4f4;
+}
+
+/* Dark Mode for links */
+.dark-mode a {
+    color: #80c7ff;
+}
+
+.dark-mode a:hover {
+    color: #c0e8ff;
+    text-decoration: underline;
+}
+
+/* Dark Mode for Scroll to Top Button */
+.dark-mode #scrollToTop {
+    background-color: #555;
+}
+
+.dark-mode #scrollToTop:hover {
+    background-color: #333;
+}
+
+/* Dark Mode for the dark mode button */
+#darkModeToggle {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    z-index: 100;
+    font-size: 18px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#darkModeToggle:hover {
+    background-color: #555;
+}
+
